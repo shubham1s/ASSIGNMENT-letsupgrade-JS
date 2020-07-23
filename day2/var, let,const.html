@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var-let-const-In-JS By Rahul</title>
+</head>
+<body>
+    <h2>Difference between var ,let and const in JavaScript</h2>
+    <p style="font-size: 20px;">Ans:-
+        <ul style="font-size: 20px;">
+            <li>var , let and const keywords - is used to declare variable in js.</li>
+            <li>The var variables belong to the global scope or local scope is limited to the functio” within which it is defined.If it is defined outside any function, the scope of the variable is global.
+                var is function scoped.</li>
+            <li>The let and const variables are blocked scopes.The scope of a variable defined with the keyword let or const is limited to the block defined by curly braces[ {} ].</li>
+            <li>const variables is limited to the block defined by curly braces [ {}]. However if a variable is defined with keyword const, it cannot be reassigned.</li>
+    </ul>
+    <h3>JS code :-</h3>
+    <pre><code>
+        //Global Variable
+        var name = "Shubham";
+        console.log("Name :",name);
+
+        {
+             //Local Variable
+             let name = "java.prog.com";
+             let type = "Blog";
+            console.table({name,type});
+        }
+        
+        //Const Variable
+        const interst = "Programming";
+        console.log(interst);
+
+        // Trying to reassign the value
+        interst = "Computer Games";
+        console.log(interst); //Here we get an error as it is a const variable</code></pre>
+    </p>
+
+    <!-- Code -->
+    <script>
+        //Global Variable
+        var name = "Shubham";
+        console.log("Name :",name);
+
+        {
+             //Local Variable
+             let name = "Cwpedia.com";
+             let type = "Blog";
+            console.table({name,type});
+        }
+
+        //Const Variable
+        const interst = "Programming";
+        console.log(interst);
+
+        // Trying to reassign the value
+        interst = "Computer Games";
+        console.log(interst); //Here we get an error as it is a const variable
+    </script>
+</body>
+</html>
