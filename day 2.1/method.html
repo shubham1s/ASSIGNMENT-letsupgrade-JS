@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method_Array_String By Rahul</title>
+</head>
+<body>
+    
+    <h2>Explain with examples the remaining methods of String and Array</h2>
+    <h3>String Methods</h3>
+    <ul>
+        <li>trim() - The trim() method removes whitespace from both sides of a string</li>
+        <li>search() - The search() method returns the position of the first occurrence of a specified text in a string</li>
+        <li>slice() - The slice() method extract a part of a string and returns the extracted parts in a new string</li>
+        <li>substring() - The substring() method extract a part of a string and returns the extracted parts in a new string</li>
+        <li>charAt() - The charAt() method returns the character at a specified index (position) in a string</li>
+        <li>charCodeAt() - The charCodeAt() method returns the unicode of the character at a specified index in a string</li>
+    </ul>
+    <h3>Array Methods</h3>
+    <ul>
+        <li>toString() - The toString() method returns an array as a comma separated string</li>
+        <li>concat() - The concat() method is used to merge (concatenate) arrays</li>
+        <li>slice() - The slice() method slices out a piece of an array into a new array</li>
+        <li>reverse() - The reverse() method reverses the elements in an array</li>
+    </ul>
+    <h4>JS Code:- </h4>
+    <pre><code>
+        // String Methods
+        let s = "      java.prog.com is developed By Shubham     ";
+        s = s.trim(); // Removes white-spaces
+        console.log(s);
+
+        console.log(s.search('SHUBHAM')); //returns the position of the first occurrence value/index
+
+        console.log(s.slice(28,33));  //extract a part of a string  
+
+        console.log(s.substring(0,7)); // gives a substring and the index 0 to 7
+
+        console.log(s.charAt(28)); //returns the character at index 28
+
+        console.log(s.charCodeAt(28)); // returns the unicode of the character at index 28
+
+        // Array Methods
+        let arr = ['Monitor','Keyboard','Mouse','CPU'];
+        let arr2 = ['Speakers','Pendrive'];
+
+        console.log(arr.toString()); //returns an array as a comma separated string
+
+        console.log(arr.concat(arr2)); // merge (concatenate) 2 arrays
+
+        console.log(arr.slice(3)); //create new array with a value at index 3
+        
+        console.log(arr.reverse()); // reverses the elements of an array
+    </code></pre>
+    <!-- Code -->
+    <script>
+        // String Methods
+        let s = "       java.prog.com is developed By Shubham       ";
+        s = s.trim(); // Removes white-spaces
+        console.log(s);
+
+        console.log(s.search('SHUBHAM')); //returns the position of the first occurrence value/index
+
+        console.log(s.slice(28,33));  //extract a part of a string  
+
+        console.log(s.substring(0,7)); // gives a substring and the index 0 to 7
+
+        console.log(s.charAt(28)); //returns the character at index 28
+
+        console.log(s.charCodeAt(28)); // returns the unicode of the character at index 28
+
+        // Array Methods
+        let arr = ['Monitor','Keyboard','Mouse','CPU'];
+        let arr2 = ['Speakers','Pendrive'];
+
+        console.log(arr.toString()); //returns an array as a comma separated string
+
+        console.log(arr.concat(arr2)); // merge (concatenate) 2 arrays
+
+        console.log(arr.slice(3)); //create new array with a value at index 3
+
+        console.log(arr.reverse()); // reverses the elements of an array
+    </script>
+</body>
+</html>
